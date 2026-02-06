@@ -36,7 +36,60 @@
             margin: 0 auto;
         }
         
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
         
+        .logo i {
+            font-size: 2.5rem;
+            color: #ffc107;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .logo span {
+            color: #ffc107;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: #ffc107;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffc107;
+            transition: width 0.3s;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
         
         .header-actions {
             display: flex;
@@ -874,6 +927,7 @@
     </script>
 </body>
 </html>
+
 
 
 
