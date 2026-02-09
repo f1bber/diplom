@@ -907,14 +907,12 @@
             alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
             this.reset();
         });
-
         document.querySelectorAll('.car-card .btn').forEach(button => {
             button.addEventListener('click', function() {
                 const carName = this.closest('.car-card').querySelector('h3').textContent;
                 alert(`Вы выбрали автомобиль: ${carName}. Наш менеджер свяжется с вами для уточнения деталей.`);
             });
         });
-
         document.querySelectorAll('.header-actions .btn, .btn-hero').forEach(button => {
             if(button.textContent.includes('Подобрать') || button.textContent.includes('Заказать')) {
                 button.addEventListener('click', function() {
@@ -925,4 +923,3 @@
     </script>   
 </body>
 </html>
-
