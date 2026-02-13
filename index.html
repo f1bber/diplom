@@ -507,8 +507,46 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #bbdefb;
         }
-               
+         @media (max-width: 992px) {
+            .about-content,
+            .contacts-grid {
+                grid-template-columns: 1fr;
+            }
             
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            
+            .cars-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .stats {
+                flex-direction: column;
+                gap: 30px;
+            }       
             .benefits-grid {
                 grid-template-columns: 1fr;
             }
@@ -882,4 +920,3 @@
     </script>   
 </body>
 </html>
-
